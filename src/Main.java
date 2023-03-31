@@ -32,6 +32,8 @@ public class Main {
 
     public static void main(String[] args) {
             Quiz quiz = new Quiz();
+            QuizTimer timer = new QuizTimer(quiz, 180);//3 minutes
+            timer.start();
             // set 1
             quiz.addSet1(new Question("As laboratory users, which is NOT the responsibility of Students/Researchers/ Visitors / Vendors? ", new ArrayList<String>(Arrays.asList("Focus on own work and take minimal notice of any risk of health and safety on themselves or any other person", "Avoid, eliminate or minimize hazards of which they are aware", "Comply with all occupational health and safety instructions")), 0));
             quiz.addSet1(new Question("Students, Researchers, visitor and vendors are not permitted to enter any laboratory without approval from the laboratory personnel. Which is the correct channel to seek for approval?", new ArrayList<String>(Arrays.asList("Laboratory executive", "Laboratory manager", "iLab/ULAB")), 2));
